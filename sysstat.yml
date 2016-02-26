@@ -1,0 +1,8 @@
+---
+- hosts: webserver 
+  remote_user: ubuntu
+  bacame_user: yes
+  tasks:
+  - name: install sysstat utility
+    apt: pkg=sysstat state=latest
+...
